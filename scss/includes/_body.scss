@@ -1,0 +1,42 @@
+.body {
+	position: relative;
+
+	&__content {
+		width: 100%;
+		z-index: 2;
+		position: relative;
+	}
+
+	&__form {
+		min-height: 100vh;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: 991px) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+
+	&__logo {
+		& svg {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__gradient {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: linear-gradient(180deg, #131820 0%, #19212D 100%);
+		z-index: 1;
+		opacity: .7;
+	}
+}
