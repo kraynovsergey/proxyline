@@ -396,7 +396,9 @@ label {
   .body__content {
     width: 100%;
     z-index: 2;
-    position: relative; }
+    position: relative;
+    display: flex;
+    justify-content: center; }
   .body__form {
     min-height: 100vh;
     padding-top: 70px;
@@ -409,9 +411,11 @@ label {
       .body__form {
         padding-top: 30px;
         padding-bottom: 30px; } }
-  .body__logo svg {
-    max-width: 100%;
-    height: auto; }
+  .body__logo {
+    position: relative; }
+    .body__logo svg {
+      max-width: 100%;
+      height: auto; }
   .body__gradient {
     position: absolute;
     left: 0;
@@ -421,6 +425,20 @@ label {
     background: linear-gradient(180deg, #131820 0%, #19212D 100%);
     z-index: 1;
     opacity: .7; }
+  .body__snowcaps {
+    position: absolute;
+    width: 79%;
+    height: auto;
+    top: -20%;
+    right: 5%;
+    display: none; }
+  .body__balls {
+    position: absolute;
+    max-width: 90%;
+    height: auto;
+    top: 0; }
+  .body._ny .body__snowcaps {
+    display: block; }
 
 .form {
   display: flex;

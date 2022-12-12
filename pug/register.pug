@@ -3,14 +3,17 @@ html(lang="ru")
     head
         - var seo = {title: 'Регистрация', description: 'Описание страницы регистрации'}
         include includes/_meta
-    body.body
+    body.body._ny
         .body__gradient
         .body__content
+            img.body__balls(src="img/balls.svg" alt="" width="1234" height="245")
+
             .container
                 .body__form
                     a.body__logo(href="#" role="link")
                         svg(width="274" height="69" viewBox="0 0 274 69" fill="none" xmlns="http://www.w3.org/2000/svg")
                             use(xlink:href="#svg-logo")
+                        img.body__snowcaps(src="img/snowcaps.svg" alt="" width="218" height="57")
 
                     form.form(action="#" method="post" role="form")
                         .form__fieldset.form__message._success На email выслан пароль для входа. Если вы не получили письмо, проверьте папку Спам.

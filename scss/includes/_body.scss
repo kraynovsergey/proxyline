@@ -5,6 +5,8 @@
 		width: 100%;
 		z-index: 2;
 		position: relative;
+		display: flex;
+		justify-content: center;
 	}
 
 	&__form {
@@ -23,6 +25,8 @@
 	}
 
 	&__logo {
+		position: relative;
+
 		& svg {
 			max-width: 100%;
 			height: auto;
@@ -38,5 +42,27 @@
 		background: linear-gradient(180deg, #131820 0%, #19212D 100%);
 		z-index: 1;
 		opacity: .7;
+	}
+
+	&__snowcaps {
+		position: absolute;
+		width: 79%;
+		height: auto;
+		top: -20%;
+		right: 5%;
+		display: none;
+	}
+
+	&__balls {
+		position: absolute;
+		max-width: 90%;
+		height: auto;
+		top: 0;
+	}
+
+	&._ny {
+		& .body__snowcaps {
+			display: block;
+		}
 	}
 }
