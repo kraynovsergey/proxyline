@@ -436,8 +436,9 @@ label {
     position: absolute;
     max-width: 90%;
     height: auto;
-    top: 0; }
-  .body._ny .body__snowcaps {
+    top: 0;
+    display: none; }
+  .body._ny .body__snowcaps, .body._ny .body__balls {
     display: block; }
 
 .form {
